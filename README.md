@@ -8,6 +8,17 @@ For example, In the Android in Java Project, If you are implementing a Bluetooth
 
 ### Setting up the dependency
 
+#### Add this to your build.gradle(Project):
+```groovy
+ allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+#### Add this to your build.gradle(Module):
 ```groovy
    implementation 'com.github.yamindroid:MMCodeJavaAndroid:1.0.0'
 ```
